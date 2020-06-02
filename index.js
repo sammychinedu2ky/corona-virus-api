@@ -5,8 +5,7 @@ let countryListMiddleWare = require('./countries')
 
 //use this route to find the Corona information of a particular country
 app.get('/:country', countryMiddleWare, (req, res) => {
-    console.log(res.data)
-    res.json(req.data)
+     res.json(req.data)
 })
 
 //use this route to find the countries you can query their information
